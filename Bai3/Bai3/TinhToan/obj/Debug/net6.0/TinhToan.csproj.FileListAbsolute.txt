@@ -1,0 +1,15 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\bin\Debug\net6.0\TinhToan.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\bin\Debug\net6.0\TinhToan.deps.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\bin\Debug\net6.0\TinhToan.runtimeconfig.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\bin\Debug\net6.0\TinhToan.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\bin\Debug\net6.0\TinhToan.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.AssemblyInfoInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.AssemblyInfo.cs
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\refint\TinhToan.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\TinhToan.genruntimeconfig.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TinhToan\obj\Debug\net6.0\ref\TinhToan.dll

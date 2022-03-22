@@ -1,0 +1,8 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\bin\Debug\TapTin.exe.config
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\bin\Debug\TapTin.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\bin\Debug\TapTin.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\obj\Debug\TapTin.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\obj\Debug\TapTin.csproj.SuggestedBindingRedirects.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\obj\Debug\TapTin.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\obj\Debug\TapTin.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TapTin\obj\Debug\TapTin.pdb

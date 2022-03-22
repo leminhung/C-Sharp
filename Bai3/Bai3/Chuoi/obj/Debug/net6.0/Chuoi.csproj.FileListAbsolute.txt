@@ -1,0 +1,15 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\bin\Debug\net6.0\Chuoi.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\bin\Debug\net6.0\Chuoi.deps.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\bin\Debug\net6.0\Chuoi.runtimeconfig.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\bin\Debug\net6.0\Chuoi.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\bin\Debug\net6.0\Chuoi.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.AssemblyInfoInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.AssemblyInfo.cs
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\refint\Chuoi.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\Chuoi.genruntimeconfig.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\Chuoi\obj\Debug\net6.0\ref\Chuoi.dll

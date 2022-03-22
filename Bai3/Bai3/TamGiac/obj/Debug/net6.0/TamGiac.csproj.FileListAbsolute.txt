@@ -1,0 +1,15 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\bin\Debug\net6.0\TamGiac.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\bin\Debug\net6.0\TamGiac.deps.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\bin\Debug\net6.0\TamGiac.runtimeconfig.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\bin\Debug\net6.0\TamGiac.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\bin\Debug\net6.0\TamGiac.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.AssemblyInfoInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.AssemblyInfo.cs
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\refint\TamGiac.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\TamGiac.genruntimeconfig.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\TamGiac\obj\Debug\net6.0\ref\TamGiac.dll

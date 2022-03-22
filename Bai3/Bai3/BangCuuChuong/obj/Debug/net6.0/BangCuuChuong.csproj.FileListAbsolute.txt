@@ -1,0 +1,15 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.AssemblyInfoInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.AssemblyInfo.cs
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\bin\Debug\net6.0\BangCuuChuong.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\bin\Debug\net6.0\BangCuuChuong.deps.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\bin\Debug\net6.0\BangCuuChuong.runtimeconfig.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\bin\Debug\net6.0\BangCuuChuong.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\bin\Debug\net6.0\BangCuuChuong.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\refint\BangCuuChuong.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\BangCuuChuong.genruntimeconfig.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai3\Bai3\BangCuuChuong\obj\Debug\net6.0\ref\BangCuuChuong.dll

@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Le Minh Hung\\Desktop\\ThirdYear\\Semester2\\.NET\\Bai3\\Bai3\\TamGiac\\TamGiac.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Le Minh Hung\\Desktop\\ThirdYear\\Semester2\\.NET\\Bai3\\Bai3\\TamGiac\\TamGiac.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Le Minh Hung\\Desktop\\ThirdYear\\Semester2\\.NET\\Bai3\\Bai3\\TamGiac\\TamGiac.csproj",
+        "projectName": "TamGiac",
+        "projectPath": "C:\\Users\\Le Minh Hung\\Desktop\\ThirdYear\\Semester2\\.NET\\Bai3\\Bai3\\TamGiac\\TamGiac.csproj",
+        "packagesPath": "C:\\Users\\Le Minh Hung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Le Minh Hung\\Desktop\\ThirdYear\\Semester2\\.NET\\Bai3\\Bai3\\TamGiac\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Le Minh Hung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
