@@ -1,101 +1,46 @@
-﻿int n, x;
-float tmp, g;
+﻿using System;
+using System.Collections.Generic;
 
-Console.Write("n = ");
-n = int.Parse(Console.ReadLine());
-
-float[] a = new float[1000];
-
-for (int i = 0; i < n; i++)
+namespace DanhSach
 {
-    a[i] = float.Parse(Console.ReadLine());
-}
-
-/*
- Sap xep tang
- */
-/*void sapXepTang()
-{
-    for (int i = 0; i < n - 1; i++)
-        for (int j = n - 1; j > i; j--)
+    class Program
+    {
+        static void Main(string[] args)
         {
-            if (a[j - 1] > a[j])
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            List<double> values = new List<double>();
+            //Nhập 5 phần tử
+            for (int i = 0; i < 5; i++)
             {
-                tmp = a[j - 1];
-                a[j - 1] = a[j];
-                a[j] = tmp;
+                Console.Write("Nhập phần tử thứ {0} = ", i + 1);
+                values.Add(double.Parse(Console.ReadLine()));
             }
-        }
-}*/
+            //Sắp xếp và in
+            values.Sort();
+            foreach (double i in values)
+                Console.Write(i + " ");
+            Console.WriteLine();
+            //Kiểm tra và xóa số âm và in
+            for (int i = 0; i < values.Count; i++)
+                while (values[i] < 0)
+                    values.RemoveAt(i);
 
+            foreach (double e in values)
+                Console.Write(e + " ");
+            Console.WriteLine();
+            //Chèn và in
+            Console.Write("Nhập số x = ");
+            double x = double.Parse(Console.ReadLine());
+            for (int i = 0; i < values.Count; i++)
+                if (values[i] > x)
+                {
+                    values.Insert(i, x);
+                    break;
+                }
 
-
-/*
- Xoa phan tu khoi mang
- */
-
-void xoaPhanTu(int k)
-{
-    for (int i = k; i < n - 1; i++)
-    {
-        a[i] = a[i + 1];
-        Console.Write("{0} ", a[i]);
-    }
-    --n;
-}
-
-/*
- Chen phan tu vao mang
- */
-
-void chenPhanTu(float g, int x)
-{
-    for (int i = n; i > x; i--)
-    {
-        a[i] = a[i-1];
-    }
-    a[x] = g;
-    ++n;
-}
-
-
-/*
- * Xoa phan tu am
- */
-/*//**void xoaPhanTuAm()
-{
-    for (int i = 0; i < n; i++)
-    {
-        if (a[i] < 0)
-        {
-            xoaPhanTu(i);
-            i--;
+            foreach (double i in values)
+                Console.Write(i + " ");
         }
     }
-    Console.WriteLine("");
-*//*}*/
-
-
-
-/*
- Hien thi
- */
-void hienThi()
-{
-    for (int i = 0; i < n; i++)
-    {
-        Console.Write("{0} ", a[i]);
-    }
-    Console.ReadLine();
 }
-
-
-
-
-Console.Write("Nhap g = ");
-g = float.Parse(Console.ReadLine());
-Console.Write("VT can chen x = ");
-x = int.Parse(Console.ReadLine());
-chenPhanTu(g, x);
-hienThi();
-

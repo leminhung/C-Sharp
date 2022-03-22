@@ -1,26 +1,16 @@
-﻿string s;
-Boolean check = true;
-Console.Write("Nhap chuoi s = ");
-s = Console.ReadLine();
-
-if(s.Length == 0)
-{
-    Console.WriteLine("hay nhap chuoi s co do dai lon hon 0");
-}
-
+﻿Console.Write("Nhap chuoi: ");
+string myString = Console.ReadLine();
+char[] myArray = myString.ToCharArray();
+int doDai = myArray.Length;
+if (doDai < 2)
+    Console.WriteLine("Khong doi xung");
 else
 {
-    for (int i = 0; i <s.Length; i++)
-    {
-        if(!s[i].Equals(s[s.Length-1-i]))
+    for (int i = 0; i < doDai / 2; i++)
+        if (myArray[i] != myArray[doDai - 1 - i])
         {
-            check = false;
-            break;
+            Console.WriteLine("Day khong phai la chuoi doi xung");
+            return;
         }
-    }
-    if (check) Console.WriteLine("Chuoi {0} la chuoi doi xung", s);
-    else Console.WriteLine("Chuoi {0} la chuoi khong doi xung", s);
+    Console.WriteLine("Day la chuoi doi xung");
 }
-
-
-

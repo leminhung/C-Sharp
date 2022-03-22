@@ -7,48 +7,24 @@ namespace TapTin
     {
         static void Main(string[] args)
         {
-            string inputFileName = @"input.txt";
-            /*string outputFileName = "input.txt";
-
-            StreamWriter streamWriter = null;*/
-            StreamReader streamReader = null;
-
-
+            string inputFileName = @"C:\Users\Le Minh Hung\Desktop\input.txt";
             try
             {
-                streamReader = new StreamReader(@"input.txt");
-                string temp;
-                int N;
-                temp = streamReader.ReadLine();
-                N = Convert.ToInt32(temp);
+                string text = "";
 
-                Console.WriteLine("temp = " + temp);
-                Console.WriteLine("N = " + N);
+                StreamReader sr = new StreamReader(inputFileName);
 
-                for (int i = 0; i < N; i++)
+                while (!sr.EndOfStream)
                 {
-                    temp = streamReader.ReadLine();
-                    int x = Convert.ToInt32(temp);
+                    text += sr.ReadLine().ToUpper();
                 }
-
-                /* streamWriter = new StreamWriter(outputFileName);
-                 streamWriter.WriteLine("hello le minh hung");
-                 Console.WriteLine("done!")*/;
-
-
-
+                Console.WriteLine("text: " + text.Length);
+                sr.Close();
             }
             catch (Exception e)
             {
                 Console.WriteLine("Connot open file " + inputFileName);
                 Console.WriteLine("Errors: " + e.Message.ToString());
-            }
-            finally
-            {
-                if(streamReader != null)
-                {
-                    streamReader.Close();
-                }
             }
             Console.ReadLine();
         }
