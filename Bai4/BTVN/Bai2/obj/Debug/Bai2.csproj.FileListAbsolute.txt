@@ -1,0 +1,8 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\bin\Debug\Bai2.exe.config
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\bin\Debug\Bai2.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\bin\Debug\Bai2.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\obj\Debug\Bai2.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\obj\Debug\Bai2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\obj\Debug\Bai2.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\obj\Debug\Bai2.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\Bai2\obj\Debug\Bai2.pdb

@@ -1,0 +1,28 @@
+3
+1
+Nguyễn Ngọc Phan
+Nam
+21
+10
+10
+10
+10
+Giỏi
+2
+Le Minh Hung
+Nam
+21
+10
+10
+10
+10
+Giỏi
+3
+Hung Minh Le
+Nam
+21
+9
+8
+9
+8.666667
+Giỏi
