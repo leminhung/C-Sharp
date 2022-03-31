@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0392358C-9AF2-42C7-AD35-A37B2D3B1085}</ProjectGuid>
+    <ProjectGuid>{C2E9EF14-4984-4A53-AA78-39664187A9AE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LeMinhHung_2019601690_proj52</RootNamespace>
-    <AssemblyName>LeMinhHung_2019601690_proj52</AssemblyName>
+    <RootNamespace>Bai2</RootNamespace>
+    <AssemblyName>Bai2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="GiaiPhuongTrinhBac2.cs" />
+    <Compile Include="RunMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,8 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\bin\Debug\LeMinhHung_2019601690_proj52.exe.config
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\bin\Debug\LeMinhHung_2019601690_proj52.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\bin\Debug\LeMinhHung_2019601690_proj52.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\obj\Debug\Bai1.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\obj\Debug\Bai1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\obj\Debug\Bai1.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\obj\Debug\LeMinhHung_2019601690_proj52.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai5\LeMinhHung_2019601690_proj52\LeMinhHung_2019601690_proj52\obj\Debug\LeMinhHung_2019601690_proj52.pdb
