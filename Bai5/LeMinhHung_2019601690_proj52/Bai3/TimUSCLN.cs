@@ -4,8 +4,8 @@ namespace Bai3
 {
     class TimUSCLN
     {
-        public int sothu1 { get; set; }
-        public int sothu2 { get; set; }
+        private int sothu1;
+        private int sothu2;
 
         public TimUSCLN()
         {

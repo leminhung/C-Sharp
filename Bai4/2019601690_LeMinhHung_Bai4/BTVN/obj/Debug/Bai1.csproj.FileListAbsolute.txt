@@ -1,0 +1,8 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\obj\Debug\Bai1.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\obj\Debug\Bai1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\obj\Debug\Bai1.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\obj\Debug\BTVN.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\obj\Debug\BTVN.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\bin\Debug\BTVN.exe.config
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\bin\Debug\BTVN.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai4\BTVN\BTVN\bin\Debug\BTVN.pdb

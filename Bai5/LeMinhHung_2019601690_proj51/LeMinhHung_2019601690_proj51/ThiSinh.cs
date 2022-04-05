@@ -1,68 +1,69 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeMinhHung_2019601690_proj51
 {
     class ThiSinh
     {
-        public string SoBaoDanh { get; set; }
-        public string HoTen { get; set; }
-        public string DiaChi { get; set; }
-        public double DiemToan { get; set; }
-        public double DiemLy { get; set; }
-        public double DiemHoa { get; set; }
-        public double DiemUuTien { get; set; }
-        public double TongDiem { get; set; }
+        private string HoTen;
+        private double DiemToan;
+        private double DiemLy;
+        private double DiemHoa;
+        private double DiemUuTien;
+
+        private int soBaoDanh;
+        public int SoBaoDanh { get => soBaoDanh; set => soBaoDanh = value; }
+
+        private double tongDiem;
+        public double TongDiem { get => tongDiem; set => tongDiem = value; }
+
+        private string diaChi;
+        public string DiaChi { get => diaChi; set => diaChi = value; }
+
 
         public ThiSinh()
         {
-            SoBaoDanh = "";
-            HoTen = "";
-            DiaChi = "";
-            DiemToan = 0;
-            DiemLy = 0;
-            DiemHoa = 0;
-            DiemUuTien = 0;
-            TongDiem = 0;
+            this.soBaoDanh = 0;
+            this.HoTen = "";
+            this.diaChi = "";
+            this.DiemToan = 0;
+            this.DiemLy = 0;
+            this.DiemHoa = 0;
+            this.DiemUuTien = 0;
+            this.tongDiem = 0;
         }
 
-        public ThiSinh(string SoBaoDanh)
+        public ThiSinh(int SoBaoDanh)
         {
-            this.SoBaoDanh = SoBaoDanh;
-            HoTen = "";
-            DiaChi = "";
-            DiemToan = 0;
-            DiemLy = 0;
-            DiemHoa = 0;
-            DiemUuTien = 0;
-            TongDiem = 0;
+            this.soBaoDanh = SoBaoDanh;
+            this.HoTen = "";
+            this.diaChi = "";
+            this.DiemToan = 0;
+            this.DiemLy = 0;
+            this.DiemHoa = 0;
+            this.DiemUuTien = 0;
+            this.tongDiem = 0;
         }
 
 
-        public ThiSinh(string soBaoDanh, string hoTen, string diaChi, double diemToan, double diemLy, double diemHoa, double diemUuTien)
+        public ThiSinh(int soBaoDanh, string hoTen, string diaChi, double diemToan, double diemLy, double diemHoa, double diemUuTien)
         {
-            SoBaoDanh = soBaoDanh;
-            HoTen = hoTen;
-            DiaChi = diaChi;
-            DiemToan = diemToan;
-            DiemLy = diemLy;
-            DiemHoa = diemHoa;
-            DiemUuTien = diemUuTien;
-            TongDiem = diemToan + diemLy + diemHoa + diemUuTien;
+            this.soBaoDanh = soBaoDanh;
+            this.HoTen = hoTen;
+            this.diaChi = diaChi;
+            this.DiemToan = diemToan;
+            this.DiemLy = diemLy;
+            this.DiemHoa = diemHoa;
+            this.DiemUuTien = diemUuTien;
+            this.tongDiem = diemToan + diemLy + diemHoa + diemUuTien;
         }
 
 
         public void nhap()
         {
-            Console.Write("Nhập Số Báo Danh: ");
-            SoBaoDanh = Console.ReadLine().Trim();
             Console.Write("Nhập Họ Tên: ");
             HoTen = Console.ReadLine().Trim();
             Console.Write("Nhập Địa Chỉ: ");
-            DiaChi = Console.ReadLine().Trim();
+            diaChi = Console.ReadLine().Trim();
             Console.Write("Nhập Điểm Toán: ");
             DiemToan = double.Parse(Console.ReadLine());
             Console.Write("Nhập Điểm Lý: ");
@@ -72,25 +73,25 @@ namespace LeMinhHung_2019601690_proj51
             Console.Write("Nhập Điểm Ưu Tiên: ");
             DiemUuTien = double.Parse(Console.ReadLine());
 
-            TongDiem = DiemHoa + DiemToan + DiemLy + DiemUuTien;
+            tongDiem = DiemHoa + DiemToan + DiemLy + DiemUuTien;
         }
 
         public override string ToString()
         {
             return
-                $"\nSBD: {SoBaoDanh}" +
+                $"\nSBD: {soBaoDanh}" +
                 $"\nHọ Tên: {HoTen}" +
-                $"\nĐịa Chỉ: {DiaChi}" +
+                $"\nĐịa Chỉ: {diaChi}" +
                 $"\nĐiểm Toán: {DiemToan}" +
                 $"\nĐiểm Lý: {DiemLy}" +
                 $"\nĐiểm Hóa: {DiemHoa}" +
                 $"\nĐiểm Ưu Tiên: {DiemUuTien}" +
-                $"\nTổng Điểm: {TongDiem}";
+                $"\nTổng Điểm: {tongDiem}";
         }
 
         public void xuat()
         {
-            Console.WriteLine("{0,-5} {1,-16} {2, 10} {3, 5} {4, 5} {5, 5} {6, 8} {7, 8}", SoBaoDanh, HoTen, DiaChi, DiemToan, DiemLy, DiemHoa, DiemUuTien, TongDiem);
+            Console.WriteLine("{0,-5} {1,-16} {2, 10} {3, 5} {4, 5} {5, 5} {6, 8} {7, 8}", soBaoDanh, HoTen, diaChi, DiemToan, DiemLy, DiemHoa, DiemUuTien, tongDiem);
         }
     }
 }
