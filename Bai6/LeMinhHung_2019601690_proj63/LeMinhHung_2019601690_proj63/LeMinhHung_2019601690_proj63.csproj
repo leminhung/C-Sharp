@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{546DFCD4-2010-4F63-B7D1-08F4E05A5A7D}</ProjectGuid>
+    <ProjectGuid>{320BD55B-EAE8-454C-87D4-82FD0D20D8AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BaiThucHanh6</RootNamespace>
-    <AssemblyName>BaiThucHanh6</AssemblyName>
+    <RootNamespace>LeMinhHung_2019601690_proj63</RootNamespace>
+    <AssemblyName>LeMinhHung_2019601690_proj63</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="IVehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Truck.cs" />
-    <Compile Include="Vehicles.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
