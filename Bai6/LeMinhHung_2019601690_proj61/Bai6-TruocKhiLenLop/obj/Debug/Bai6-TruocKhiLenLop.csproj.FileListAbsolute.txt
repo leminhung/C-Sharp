@@ -1,0 +1,8 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\bin\Debug\Bai6-TruocKhiLenLop.exe.config
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\bin\Debug\Bai6-TruocKhiLenLop.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\bin\Debug\Bai6-TruocKhiLenLop.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\obj\Debug\Bai6-TruocKhiLenLop.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\obj\Debug\Bai6-TruocKhiLenLop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\obj\Debug\Bai6-TruocKhiLenLop.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\obj\Debug\Bai6-TruocKhiLenLop.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\Bai6\Bai6-TruocKhiLenLop\Bai6-TruocKhiLenLop\obj\Debug\Bai6-TruocKhiLenLop.pdb
