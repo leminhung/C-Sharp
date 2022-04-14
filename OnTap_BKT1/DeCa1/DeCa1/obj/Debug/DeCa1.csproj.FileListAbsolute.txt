@@ -1,0 +1,8 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\bin\Debug\DeCa1.exe.config
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\bin\Debug\DeCa1.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\bin\Debug\DeCa1.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\obj\Debug\DeCa1.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\obj\Debug\DeCa1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\obj\Debug\DeCa1.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\obj\Debug\DeCa1.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\Semester2\.NET\OnTap_BKT1\DeCa1\DeCa1\obj\Debug\DeCa1.pdb
