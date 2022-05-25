@@ -1,0 +1,49 @@
+﻿<Window x:Class="LeMinhHung_2019601690.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeMinhHung_2019601690"
+        mc:Ignorable="d"
+        Title="LeMinhHung_2019601690" Height="600" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Height="39" Margin="0,45,0,0" TextWrapping="Wrap" Text="Quản lý nhân viên" VerticalAlignment="Top" Width="226" FontWeight="Bold" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="84,89,0,0" TextWrapping="Wrap" Text="Mã nhân viên:" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="txt_manv" HorizontalAlignment="Left" Height="27" Margin="231,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="84,137,0,0" TextWrapping="Wrap" Text="Họ tên:" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="txt_hoten" HorizontalAlignment="Left" Height="27" Margin="231,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="84,280,0,0" TextWrapping="Wrap" Text="Tiền lương ngày:" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="txt_tienluongngay" HorizontalAlignment="Left" Height="26" Margin="231,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="84,324,0,0" TextWrapping="Wrap" Text="Số ngày làm việc:" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="txt_songaylamviec" HorizontalAlignment="Left" Height="26" Margin="231,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="84,191,0,0" TextWrapping="Wrap" Text="Giới tính:" VerticalAlignment="Top" Width="96"/>
+        <RadioButton x:Name="rdnam" Content="Nam" HorizontalAlignment="Left" Margin="231,198,0,0" VerticalAlignment="Top" IsChecked="true"/>
+        <RadioButton x:Name="rdnu" Content="Nữ" HorizontalAlignment="Left" Margin="400,197,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="84,235,0,0" TextWrapping="Wrap" Text="Ngày tháng năm sinh:" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="datepicker" HorizontalAlignment="Left" Height="26" Margin="231,235,0,0" VerticalAlignment="Top" Width="204"/>
+        <ListView MouseDoubleClick="btn_item_detail" x:Name="list_nv" HorizontalAlignment="Center" Height="150" Margin="0,396,0,0" VerticalAlignment="Top" Width="756">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Mã NV" Width="50" DisplayMemberBinding="{Binding maNV}" />
+                    <GridViewColumn Header="Họ tên" Width="120" DisplayMemberBinding="{Binding hoTen}" />
+                    <GridViewColumn Header="Giới tính" Width="100" DisplayMemberBinding="{Binding gioiTinh}" />
+                    <GridViewColumn Header="Ngày Sinh" Width="120" DisplayMemberBinding="{Binding namSinh}" />
+                    <GridViewColumn Header="Lương ngày" Width="120" DisplayMemberBinding="{Binding tienLuongNgay}" />
+                    <GridViewColumn Header="Số ngày làm việc" Width="120" DisplayMemberBinding="{Binding soNgayLamViec}" />
+                    <GridViewColumn Header="Tiền lương" Width="120" DisplayMemberBinding="{Binding luongTong}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Menu HorizontalAlignment="Center" VerticalAlignment="Top" Width="800">
+            <MenuItem Header="Hệ thống" x:Name="hethong">
+                <MenuItem Header="Thoát" x:Name="thoat" Click="btn_exit"/>
+            </MenuItem>
+            <MenuItem Header="Quản lý nhân viên" x:Name="quanly">
+                <MenuItem Header="Thêm" x:Name="them" Click="btn_them"/>
+                <MenuItem Header="Hiển thị" x:Name="hienthi" Click="btn_hienthi"/>
+                <MenuItem Header="Xóa" x:Name="xoa" Click="btn_xoa"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>

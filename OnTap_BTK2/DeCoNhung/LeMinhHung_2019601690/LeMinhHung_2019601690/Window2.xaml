@@ -1,0 +1,26 @@
+﻿<Window x:Class="LeMinhHung_2019601690.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeMinhHung_2019601690"
+        mc:Ignorable="d"
+        Title="LeMinhHung_2019601690" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="264,24,0,0" TextWrapping="Wrap" Text="Quản lý nhân viên" VerticalAlignment="Top" Width="208" FontSize="24" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,82,0,0" TextWrapping="Wrap" Text="Họ và tên nhân viên:" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="txt_hoten" HorizontalAlignment="Left" Height="26" Margin="264,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,217,0,0" TextWrapping="Wrap" Text="Số tiền bán hàng" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="txt_tienbanhang" HorizontalAlignment="Left" Height="26" Margin="264,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,123,0,0" TextWrapping="Wrap" Text="Loại nhân viên:" VerticalAlignment="Top" Width="111"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,163,0,0" TextWrapping="Wrap" Text="Ngày sinh:" VerticalAlignment="Top" Width="111"/>
+        <DatePicker x:Name="datepicker" HorizontalAlignment="Left" Height="26" Margin="264,163,0,0" VerticalAlignment="Top" Width="185"/>
+        <ComboBox x:Name="opt_loainv" HorizontalAlignment="Left" Height="26" Margin="264,123,0,0" VerticalAlignment="Top" Width="185" SelectedIndex="0">
+            <ComboBoxItem Content="Cơ Hữu"/>
+            <ComboBoxItem Content="Hợp đồng"/>
+            <ComboBoxItem Content="Cộng tác viên"/>
+        </ComboBox>
+        <Button x:Name="btn_exit_window22" Content="Thoát" HorizontalAlignment="Left" Height="27" Margin="346,283,0,0" VerticalAlignment="Top" Width="72" Click="btn_exit_window2"/>
+
+    </Grid>
+</Window>
