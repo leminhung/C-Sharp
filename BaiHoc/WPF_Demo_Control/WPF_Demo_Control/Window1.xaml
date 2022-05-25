@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF_Demo_Control.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Demo_Control"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Họ đệm:" HorizontalAlignment="Left" Margin="99,51,0,0" VerticalAlignment="Top" Width="103" FontFamily="Bahnschrift SemiBold" FontSize="14"/>
+        <Label Content="Tên:" HorizontalAlignment="Left" Margin="99,97,0,0" VerticalAlignment="Top" Width="103" FontFamily="Bahnschrift SemiBold" FontSize="14"/>
+        <Label Content="Giới tính:" HorizontalAlignment="Left" Margin="99,139,0,0" VerticalAlignment="Top" Width="103" FontFamily="Bahnschrift SemiBold" FontSize="14"/>
+        <Label Content="Ngoại ngữ:" HorizontalAlignment="Left" Margin="99,191,0,0" VerticalAlignment="Top" Width="103" FontFamily="Bahnschrift SemiBold" FontSize="14"/>
+        <Label Content="Quê quán:" HorizontalAlignment="Left" Margin="99,233,0,0" VerticalAlignment="Top" Width="103" FontFamily="Bahnschrift SemiBold" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Name="txthodem" Margin="291,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199" Height="27" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Name="txtten" Margin="291,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199" Height="27"/>
+        <RadioButton Content="Nam" Name="radionam" HorizontalAlignment="Left" Margin="291,152,0,0" VerticalAlignment="Top" Height="14" Width="71"/>
+        <RadioButton Content="Nữ"  Name="radionu" HorizontalAlignment="Left" Margin="412,152,0,0" VerticalAlignment="Top" Height="14" Width="78"/>
+        <CheckBox Content="Tiếng Anh" HorizontalAlignment="Left" Margin="291,204,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Tiếng Trung" HorizontalAlignment="Left" Margin="419,206,0,0" VerticalAlignment="Top"/>
+        <Button Content="Xem thông tin" HorizontalAlignment="Left" Height="30" Margin="290,283,0,0" VerticalAlignment="Top" Width="90" Click="ButtonXem_Click"/>
+        <Button Content="Nhập lại" HorizontalAlignment="Left" Height="30" Margin="400,283,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click"/>
+        <ComboBox Name="cboQueQuan" HorizontalAlignment="Left" Height="22" Margin="291,238,0,0" VerticalAlignment="Top" Width="199" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Hà Nội</ComboBoxItem>
+            <ComboBoxItem>Thanh Hóa</ComboBoxItem>
+            <ComboBoxItem>Đà Nẵng</ComboBoxItem>
+            <ComboBoxItem>Lào Cai</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="226,15,0,0" TextWrapping="Wrap" Text="Thông tin cá nhân" VerticalAlignment="Top" Width="329" Padding="8,0,0,0" FlowDirection="LeftToRight" ScrollViewer.CanContentScroll="True" Cursor="AppStarting" TextAlignment="Center" LineHeight="Auto"/>
+
+    </Grid>
+</Window>

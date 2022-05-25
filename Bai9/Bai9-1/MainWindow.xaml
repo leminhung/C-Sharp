@@ -1,0 +1,92 @@
+﻿<Window x:Class="Bai9_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai9_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="20,10,20,10">
+        <ListBox 
+            x:Name="danhsach" 
+            HorizontalAlignment="Left" 
+            Height="320" 
+            Margin="40,0,0,0" 
+            VerticalAlignment="Center" 
+            Width="280"
+            SelectedIndex="0">
+            <ListBoxItem Content="Công nghệ thực tại ảo"/>
+            <ListBoxItem Content="Đảm bảo chất lượng phần mềm"/>
+            <ListBoxItem Content="Giải thuật di truyền ứng dụng"/>
+            <ListBoxItem Content="Hệ chuyên gia"/>
+            <ListBoxItem Content="Lập trình căn bản"/>
+            <ListBoxItem Content="Lập trình hướng đối tượng"/>
+            <ListBoxItem Content="Lập trình mạng"/>
+            <ListBoxItem Content="Lập trình trên Windows"/>
+            <ListBoxItem Content="Một số phương pháp tính toán phần mềm"/>
+            <ListBoxItem Content="Nhập môn tin học"/>
+            <ListBoxItem Content="Phân tích thiết kế hệ thống"/>
+            <ListBoxItem Content="Phân tích và thống kê số liệu"/>
+            <ListBoxItem Content="Thiết kế cơ sở dữ liệu"/>
+            <ListBoxItem Content="Thiết kế trang Web"/>
+            <ListBoxItem Content="Tin văn phòng"/>
+        </ListBox>
+        <ListBox 
+            x:Name="danhsachchon" 
+            HorizontalAlignment="Left" 
+            Height="320" 
+            Margin="425,0,0,0" 
+            VerticalAlignment="Center" 
+            Width="280"
+            SelectedIndex="0"/>
+        <Label
+            x:Name="label3" 
+            Content="Danh sách:" 
+            HorizontalAlignment="Left" 
+            Margin="40,10,0,0" 
+            VerticalAlignment="Top" FontSize="16"/>
+        <Label 
+            x:Name="label4" 
+            Content="Sách đã chọn:" 
+            HorizontalAlignment="Left" 
+            Margin="425,10,0,0" 
+            VerticalAlignment="Top" FontSize="16"/>
+        <Button 
+            x:Name="btn_chon1" 
+            Content="&gt;" 
+            HorizontalAlignment="Left" 
+            Height="27" 
+            Margin="349,94,0,0" 
+            VerticalAlignment="Top" 
+            Width="46" FontSize="16" Click="btn_chon1_Click"/>
+        <Button 
+            x:Name="btn_chontatca" 
+            Content="&gt;&gt;" 
+            HorizontalAlignment="Left" 
+            Height="27" Margin="349,141,0,0" 
+            VerticalAlignment="Top" 
+            Width="46" FontSize="16" Click="btn_chontatca_Click"/>
+        <Button 
+            x:Name="btn_bo1" 
+            Content="&lt;" 
+            HorizontalAlignment="Left" 
+            Height="27" Margin="349,190,0,0" 
+            VerticalAlignment="Top" 
+            Width="46" FontSize="16" Click="btn_bo1_Click"/>
+        <Button 
+            x:Name="btn_botatca" 
+            Content="&lt;&lt;" 
+            HorizontalAlignment="Left" 
+            Height="27" 
+            Margin="349,235,0,0" 
+            VerticalAlignment="Top" 
+            Width="46" FontSize="16" Click="btn_botatca_Click"/>
+        <Button
+            x:Name="btn_Thoat"
+            Content="Thoát"
+            HorizontalAlignment="Right"
+            Height="27"
+            Margin="0,360,50,0" Width="91" FontSize="16" Click="btn_Thoat_Click" />
+
+    </Grid>
+</Window>

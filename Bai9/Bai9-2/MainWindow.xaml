@@ -1,0 +1,88 @@
+﻿<Window x:Class="Bai9_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai9_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="777">
+    <Grid Margin="0,0,245,0">
+        <Label 
+            Content="Họ Tên:" 
+            HorizontalAlignment="Left" 
+            Margin="52,24,0,0" 
+            VerticalAlignment="Top" 
+            FontSize="15"/>
+        <Label 
+            Content="Giới Tính:" 
+            HorizontalAlignment="Left" 
+            Margin="52,69,0,0" 
+            VerticalAlignment="Top" 
+            FontSize="15"/>
+        <Label 
+            Content="Phòng ban:" 
+            HorizontalAlignment="Left" 
+            Margin="52,116,0,0" 
+            VerticalAlignment="Top" 
+            FontSize="15"/>
+        <TextBox 
+            x:Name="txtHoTen"
+            FontSize="15"
+            HorizontalAlignment="Left" 
+            Height="30" 
+            Margin="162,24,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="342"/>
+        <ComboBox
+            x:Name="cbGioiTinh"
+            SelectedIndex="0"
+            FontSize="15"
+            HorizontalAlignment="Left" 
+            Height="30" 
+            Margin="162,69,0,0" 
+            VerticalAlignment="Top" 
+            Width="342">
+            <ComboBoxItem>Nam</ComboBoxItem>
+            <ComboBoxItem>Nữ</ComboBoxItem>
+        </ComboBox>
+        <ComboBox
+            x:Name="cbPhongBan"
+            SelectedIndex="0"
+            FontSize="15"
+            HorizontalAlignment="Left" 
+            Height="30" 
+            Margin="162,118,0,0" 
+            VerticalAlignment="Top" 
+            Width="342">
+            <ComboBoxItem>Phòng Kỹ Thuật</ComboBoxItem>
+            <ComboBoxItem>Phòng Hành Chính</ComboBoxItem>
+            <ComboBoxItem>Phòng Kinh Doanh</ComboBoxItem>
+        </ComboBox>
+        <ListBox 
+            x:Name="listboxThongTin"
+            HorizontalAlignment="Left" 
+            Height="239" 
+            Margin="52,213,0,0" 
+            VerticalAlignment="Top" 
+            Width="452"/>
+        <Button
+            x:Name="btnThem"
+            Content="Thêm"
+            FontSize="15"
+            HorizontalAlignment="Left" 
+            Height="27" 
+            Margin="262,168,0,0" 
+            VerticalAlignment="Top" 
+            Width="100" Click="btnThem_Click"/>
+        <Button
+            x:Name="btnThoat"
+            Content="Thoát"
+            FontSize="15"
+            HorizontalAlignment="Left" 
+            Height="27" 
+            Margin="405,168,0,0" 
+            VerticalAlignment="Top" 
+            Width="99" Click="btnThoat_Click"/>
+    </Grid>
+</Window>

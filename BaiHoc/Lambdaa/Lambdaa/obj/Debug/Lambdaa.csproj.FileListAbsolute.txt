@@ -1,0 +1,8 @@
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\bin\Debug\Lambdaa.exe.config
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\bin\Debug\Lambdaa.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\bin\Debug\Lambdaa.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\obj\Debug\Lambdaa.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\obj\Debug\Lambdaa.csproj.SuggestedBindingRedirects.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\obj\Debug\Lambdaa.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\obj\Debug\Lambdaa.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\BaiHoc\Lambdaa\Lambdaa\obj\Debug\Lambdaa.pdb

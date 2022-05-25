@@ -1,0 +1,76 @@
+﻿<Window x:Class="Bai9_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai9_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="650"
+        FontSize="20">
+    <Grid Background="#FFEAF4F3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.ColumnSpan="4" Content="Bảng Tính Tiền Điện" Foreground="Red" 
+               FontSize="26" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="4" Orientation="Horizontal">
+            <Label Content="Họ tên khách hàng: " Margin="20,0,0,0"/>
+            <ComboBox x:Name="cboHoTen" Width="250" Height="30"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Nguyễn Thanh Tâm"/>
+                <ComboBoxItem Content="Nguyễn Thị Huyền"/>
+                <ComboBoxItem Content="Nguyễn Văn A"/>
+            </ComboBox>
+        </StackPanel>
+        <Label Grid.Row="2" Grid.Column="0" Content="Chỉ số cũ: " Margin="20,0,0,0"/>
+        <TextBox x:Name="txtChiSoCu" Grid.Row="2" Grid.Column="1" Width="100" Height="30"/>
+        <Label Grid.Row="2" Grid.Column="2" Content="Số kw trong định mức: " Margin="20,0,0,0"/>
+        <TextBox x:Name="txtSokwTrongDinhMuc" Grid.Row="2" Grid.Column="3" Width="100" Height="30" 
+                 HorizontalAlignment="Left" IsReadOnly="True"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Chỉ số mới: " Margin="20,0,0,0"/>
+        <TextBox x:Name="txtChiSoMoi" Grid.Row="3" Grid.Column="1" Width="100" Height="30"/>
+        <Label Grid.Row="3" Grid.Column="2" Content="Số kw vượt định mức: " Margin="20,0,0,0"/>
+        <TextBox x:Name="txtSokwVuotDinhMuc" Grid.Row="3" Grid.Column="3" Width="100" Height="30"
+                 HorizontalAlignment="Left" IsReadOnly="True"/>
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Số kw tiêu thụ: " Margin="20,0,0,0"/>
+        <TextBox x:Name="txtSokwTieuThu" Grid.Row="4" Grid.Column="1" Width="100" Height="30"
+                 IsReadOnly="True"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Tổng tiền phải trả: " 
+               VerticalAlignment="Bottom" HorizontalAlignment="Center" 
+               Grid.ColumnSpan="2" Margin="20,0,0,0"/>
+        <TextBlock Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="20,5,0,5">
+            Định mức là 50 kw <LineBreak/> Trong định mức là 500đ/1kw<LineBreak/>Vượt định mức là 1000đ/kw
+        </TextBlock>
+        <TextBox x:Name="txtTongTien" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Width="200" Height="30"
+                 HorizontalAlignment="Center" Margin="20,0,0,0"
+                 IsReadOnly="True"/>
+        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" 
+                    Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="btnTinh" Click="btnTinh_Click" Content="Tính" Width="100" Height="30" Margin="0,10,10,0"/>
+            <Button x:Name="btnIn" Click="btnIn_Click" Content="In" Width="80" Height="30" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <Button x:Name="btnThoat"  Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Thoát"
+                Width="80" Height="30" Margin="0,10,0,0" VerticalAlignment="Top" Click="btnThoat_Click"/>
+
+        <ListBox x:Name="lstThongTin" Grid.Row="6" Grid.Column="2"
+                 Grid.ColumnSpan="2" Grid.RowSpan="3" Background="Beige"
+                 Margin="20,10,10,10" Height="100" VerticalAlignment="Top"></ListBox>
+    </Grid>
+</Window>

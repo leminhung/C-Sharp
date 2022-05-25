@@ -1,0 +1,48 @@
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.csproj.AssemblyReference.cache
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\App.g.cs
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1_MarkupCompile.cache
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1_MarkupCompile.lref
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.exe
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.deps.json
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.runtimeconfig.json
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.dll
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.pdb
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.g.resources
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.AssemblyInfoInputs.cache
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.AssemblyInfo.cs
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.csproj.CoreCompileInputs.cache
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.dll
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\refint\Bai9-1.dll
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.pdb
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.genruntimeconfig.cache
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\ref\Bai9-1.dll
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\bin\Debug\net6.0-windows\Castle.Core.dll
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\bin\Debug\net6.0-windows\FakeItEasy.dll
+D:\Ki2_Nam3\.NET\TrenLop\Bai9-1\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.csproj.CopyComplete
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.exe
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.deps.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.runtimeconfig.json
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\bin\Debug\net6.0-windows\Bai9-1.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\bin\Debug\net6.0-windows\Castle.Core.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\bin\Debug\net6.0-windows\FakeItEasy.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.csproj.AssemblyReference.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1_MarkupCompile.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1_MarkupCompile.lref
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.g.resources
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.AssemblyInfoInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.AssemblyInfo.cs
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.csproj.CoreCompileInputs.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.csproj.CopyComplete
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\refint\Bai9-1.dll
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.pdb
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\Bai9-1.genruntimeconfig.cache
+C:\Users\Le Minh Hung\Desktop\ThirdYear\C-Sharp\Bai9\Bai9-1\obj\Debug\net6.0-windows\ref\Bai9-1.dll
