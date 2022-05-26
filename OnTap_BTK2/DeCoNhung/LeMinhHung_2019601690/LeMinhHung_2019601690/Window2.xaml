@@ -9,13 +9,13 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="36" Margin="264,24,0,0" TextWrapping="Wrap" Text="Quản lý nhân viên" VerticalAlignment="Top" Width="208" FontSize="24" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,82,0,0" TextWrapping="Wrap" Text="Họ và tên nhân viên:" VerticalAlignment="Top" Width="111"/>
-        <TextBox x:Name="txt_hoten" HorizontalAlignment="Left" Height="26" Margin="264,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
+        <TextBox x:Name="txt_hoten" HorizontalAlignment="Left" Height="26" Margin="264,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" IsEnabled="false"/>
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,217,0,0" TextWrapping="Wrap" Text="Số tiền bán hàng" VerticalAlignment="Top" Width="111"/>
-        <TextBox x:Name="txt_tienbanhang" HorizontalAlignment="Left" Height="26" Margin="264,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
+        <TextBox IsEnabled="false" x:Name="txt_tienbanhang" HorizontalAlignment="Left" Height="26" Margin="264,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,123,0,0" TextWrapping="Wrap" Text="Loại nhân viên:" VerticalAlignment="Top" Width="111"/>
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="114,163,0,0" TextWrapping="Wrap" Text="Ngày sinh:" VerticalAlignment="Top" Width="111"/>
-        <DatePicker x:Name="datepicker" HorizontalAlignment="Left" Height="26" Margin="264,163,0,0" VerticalAlignment="Top" Width="185"/>
-        <ComboBox x:Name="opt_loainv" HorizontalAlignment="Left" Height="26" Margin="264,123,0,0" VerticalAlignment="Top" Width="185" SelectedIndex="0">
+        <DatePicker IsEnabled="false" x:Name="datepicker" HorizontalAlignment="Left" Height="26" Margin="264,163,0,0" VerticalAlignment="Top" Width="185"/>
+        <ComboBox IsEnabled="false" x:Name="opt_loainv" HorizontalAlignment="Left" Height="26" Margin="264,123,0,0" VerticalAlignment="Top" Width="185" SelectedIndex="0">
             <ComboBoxItem Content="Cơ Hữu"/>
             <ComboBoxItem Content="Hợp đồng"/>
             <ComboBoxItem Content="Cộng tác viên"/>

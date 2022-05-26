@@ -20,7 +20,7 @@
             <ComboBoxItem>Hợp đồng</ComboBoxItem>
             <ComboBoxItem>Cộng tác viên</ComboBoxItem>
         </ComboBox>
-        <ListView HorizontalAlignment="Left" Height="110" Margin="114,262,0,0" VerticalAlignment="Top" Width="582">
+        <ListView x:Name="list_nv" HorizontalAlignment="Left" Height="110" Margin="114,262,0,0" VerticalAlignment="Top" Width="582">
 
         </ListView>
         <Button x:Name="btn_nhapp" Content="Nhập" HorizontalAlignment="Left" Height="27" Margin="234,390,0,0" VerticalAlignment="Top" Width="71" Click="btn_nhap"/>

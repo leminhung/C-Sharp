@@ -27,6 +27,36 @@ namespace LeMinhHung_2019601690
 
         private void btn_nhap(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                string errValue = "";
+                if (string.IsNullOrWhiteSpace(txt_hoten.Text) || string.IsNullOrWhiteSpace(txt_tienbanhang.Text) || string.IsNullOrWhiteSpace(datepicker.Text) || opt_loainv.SelectedItem == null)
+                {
+                    errValue += "Ban khong duoc bo trong mot trong cac thuoc tinh \n";
+                }
+
+                string hoten = txt_hoten.Text;
+                float tienbh = float.Parse(txt_tienbanhang.Text);
+                DateTime dtime = datepicker.SelectedDate.Value;
+                string loainv = (opt_loainv.SelectedItem as ComboBoxItem).Content.ToString();
+
+                if (!string.IsNullOrWhiteSpace(errValue))
+                {
+                    throw new Exception(errValue);
+                }
+
+                TimeSpan timeSpan = DateTime.Now - dtime;
+                int tuoi = Convert.ToInt32(timeSpan.TotalDays / 365.25);
+                if (tuoi < 18 || tuoi > 60)
+                {
+                    throw new Exception("Tuoi phai nam trong khoang [18, 60]");
+                }
+
+                list_nv.Items.Add(new NhanVien(hoten, loainv, dtime, tienbh));
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -40,7 +70,20 @@ namespace LeMinhHung_2019601690
 
         private void btn_chitiet(object sender, RoutedEventArgs e)
         {
+            NhanVien nv = (list_nv.SelectedItem as NhanVien);
 
+            if (nv == null)
+            {
+                MessageBox.Show("Ban chua chon nhan vien nao");
+            }
+
+            Window2 window2 = new Window2();
+            window2.txt_hoten.Text = nv.hoTen;
+            window2.txt_tienbanhang.Text = nv.soTienBan.ToString();
+            window2.datepicker.Text = nv.ngaysinh.ToString();
+            window2.opt_loainv.SelectedItem = nv.loaiNv.ToString();
+
+            window2.ShowDialog();
         }
     }
 }
