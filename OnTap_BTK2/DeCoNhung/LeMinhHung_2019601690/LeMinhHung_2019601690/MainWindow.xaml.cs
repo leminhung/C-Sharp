@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,23 +28,34 @@ namespace LeMinhHung_2019601690
 
         private void btn_nhap(object sender, RoutedEventArgs e)
         {
+            string errValue = "";
             try
             {
-                string errValue = "";
                 if (string.IsNullOrWhiteSpace(txt_hoten.Text) || string.IsNullOrWhiteSpace(txt_tienbanhang.Text) || string.IsNullOrWhiteSpace(datepicker.Text) || opt_loainv.SelectedItem == null)
                 {
                     errValue += "Ban khong duoc bo trong mot trong cac thuoc tinh \n";
+                }
+
+                if (!string.IsNullOrWhiteSpace(errValue))
+                {
+                    throw new Exception(errValue);
+                }
+
+                if (!Regex.IsMatch(txt_hoten.Text, @"^[a-zA-Z\s]+$")) //Chỉ nhận chữ và khoảng trắng
+                {
+                    throw new Exception("Họ Tên Chỉ Được Chứa Chữ Và Khoảng Trắng (Độ dài 6-35 kí tự)!!");
+                }
+
+                if (!Regex.IsMatch(txt_tienbanhang.Text, @"(\d+)?.(\d+)?") ||  //số thực double
+                   !Regex.IsMatch(txt_tienbanhang.Text, @"\d+")) //số nguyên
+                {
+                    throw new Exception("Số Tiền Bán Hàng Phải Là Số");
                 }
 
                 string hoten = txt_hoten.Text;
                 float tienbh = float.Parse(txt_tienbanhang.Text);
                 DateTime dtime = datepicker.SelectedDate.Value;
                 string loainv = (opt_loainv.SelectedItem as ComboBoxItem).Content.ToString();
-
-                if (!string.IsNullOrWhiteSpace(errValue))
-                {
-                    throw new Exception(errValue);
-                }
 
                 TimeSpan timeSpan = DateTime.Now - dtime;
                 int tuoi = Convert.ToInt32(timeSpan.TotalDays / 365.25);

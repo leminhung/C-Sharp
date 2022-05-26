@@ -8,12 +8,15 @@ namespace LeMinhHung_2019601690
 {
     public class NhanVien
     {
-        
+        public string hoTen;
+        public string loaiNv;
+        public DateTime ngaysinh;
+        public float soTienBan;
 
-        public string hoTen { get; set; }
-        public string loaiNv { get; set; }
-        public DateTime ngaysinh { get; set; }
-        public float soTienBan { get; set; }
+        public string HoTen { get => hoTen; set => hoTen = value; }
+        public string LoaiNv { get => loaiNv; set => loaiNv = value; }
+        public DateTime Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
+        public float SoTienBan { get => soTienBan; set => soTienBan = value; }
 
         public double hoaHong { 
             get
@@ -36,15 +39,15 @@ namespace LeMinhHung_2019601690
 
         public NhanVien(string hoTen, string loaiNv, DateTime ngaysinh, float soTienBan)
         {
-            this.hoTen = hoTen;
-            this.loaiNv = loaiNv;
-            this.ngaysinh = ngaysinh;
-            this.soTienBan = soTienBan;
+            HoTen = hoTen;
+            LoaiNv = loaiNv;
+            Ngaysinh = ngaysinh;
+            SoTienBan = soTienBan;
         }
 
         public override string ToString()
         {
-            return $"{hoTen} - {loaiNv} - {ngaysinh} - Tiền bán hàng: {soTienBan} - Hoa hồng: {hoaHong}";
+            return $"{HoTen} - {LoaiNv} - {Ngaysinh} - Tiền bán hàng: {SoTienBan} - Hoa hồng: {hoaHong}";
         }
     }
 }
