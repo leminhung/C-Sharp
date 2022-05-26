@@ -24,12 +24,12 @@
         <ListView MouseDoubleClick="btn_item_detail" x:Name="list_nv" HorizontalAlignment="Center" Height="150" Margin="0,396,0,0" VerticalAlignment="Top" Width="756">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Mã NV" Width="50" DisplayMemberBinding="{Binding maNV}" />
-                    <GridViewColumn Header="Họ tên" Width="120" DisplayMemberBinding="{Binding hoTen}" />
-                    <GridViewColumn Header="Giới tính" Width="100" DisplayMemberBinding="{Binding gioiTinh}" />
-                    <GridViewColumn Header="Ngày Sinh" Width="120" DisplayMemberBinding="{Binding namSinh}" />
-                    <GridViewColumn Header="Lương ngày" Width="120" DisplayMemberBinding="{Binding tienLuongNgay}" />
-                    <GridViewColumn Header="Số ngày làm việc" Width="120" DisplayMemberBinding="{Binding soNgayLamViec}" />
+                    <GridViewColumn Header="Mã NV" Width="50" DisplayMemberBinding="{Binding MaNV}" />
+                    <GridViewColumn Header="Họ tên" Width="120" DisplayMemberBinding="{Binding HoTen}" />
+                    <GridViewColumn Header="Giới tính" Width="100" DisplayMemberBinding="{Binding GioiTinh}" />
+                    <GridViewColumn Header="Ngày Sinh" Width="120" DisplayMemberBinding="{Binding NamSinh}" />
+                    <GridViewColumn Header="Lương ngày" Width="120" DisplayMemberBinding="{Binding TienLuongNgay}" />
+                    <GridViewColumn Header="Số ngày làm việc" Width="120" DisplayMemberBinding="{Binding SoNgayLamViec}" />
                     <GridViewColumn Header="Tiền lương" Width="120" DisplayMemberBinding="{Binding luongTong}" />
                 </GridView>
             </ListView.View>

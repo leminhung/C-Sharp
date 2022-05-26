@@ -1,0 +1,29 @@
+﻿<Window x:Class="LeMinhHung_2019601690.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeMinhHung_2019601690"
+        mc:Ignorable="d"
+        Title="LeMinhHung_2019601690" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="237,34,0,0" TextWrapping="Wrap" Text="Chương trình tính lương" VerticalAlignment="Top" Width="303" FontSize="24" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="95,90,0,0" TextWrapping="Wrap" Text="Họ tên:" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="txt_ten" HorizontalAlignment="Left" Height="24" Margin="237,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="95,170,0,0" TextWrapping="Wrap" Text="Số ngày công:" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txt_songaycong" HorizontalAlignment="Left" Height="24" Margin="237,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="95,217,0,0" TextWrapping="Wrap" Text="Lương:" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="txt_luong" HorizontalAlignment="Left" Height="24" Margin="237,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="95,133,0,0" TextWrapping="Wrap" Text="Giới tính:" VerticalAlignment="Top" Width="65"/>
+        <RadioButton IsChecked="true" x:Name="rdnam" Content="Nam" HorizontalAlignment="Left" Height="24" Margin="237,133,0,0" VerticalAlignment="Top" Width="79"/>
+        <RadioButton x:Name="rd_nu" Content="Nữ" HorizontalAlignment="Center" Height="24" Margin="0,133,0,0" VerticalAlignment="Top" Width="80"/>
+        <ListView x:Name="list_nv" HorizontalAlignment="Left" Height="108" Margin="95,258,0,0" VerticalAlignment="Top" Width="515">
+
+        </ListView>
+        <Button Content="Xóa dữ liệu" HorizontalAlignment="Left" Height="33" Margin="184,381,0,0" VerticalAlignment="Top" Width="79" Click="btn_delete"/>
+        <Button Content="Chi tiết" HorizontalAlignment="Left" Height="33" Margin="295,380,0,0" VerticalAlignment="Top" Width="79" Click="btn_detail"/>
+        <Button Content="Thêm" HorizontalAlignment="Left" Height="33" Margin="400,379,0,0" VerticalAlignment="Top" Width="79" Click="btn_add"/>
+        <Button Content="Đóng" HorizontalAlignment="Left" Height="33" Margin="518,379,0,0" VerticalAlignment="Top" Width="79" Click="btn_close"/>
+
+    </Grid>
+</Window>

@@ -10,19 +10,26 @@ namespace LeMinhHung_2019601690
     public class NhanVien
     {
 
-        public String maNV { get; set; }
-        public String hoTen { get; set; }
-        public String gioiTinh { get; set; }
-        public DateTime namSinh { get; set; }
-        public Int64 soNgayLamViec { get; set; }
-        public Int64 tienLuongNgay { get; set; }
+        private String maNV;
+        private String hoTen;
+        private String gioiTinh;
+        private DateTime namSinh;
+        private Int64 soNgayLamViec;
+        private Int64 tienLuongNgay;
+
+        public String MaNV { get => maNV; set => maNV = value; }
+        public String HoTen { get => hoTen; set => hoTen = value; }
+        public String GioiTinh { get => gioiTinh; set => gioiTinh = value; }
+        public DateTime NamSinh { get => namSinh; set => namSinh = value; }
+        public Int64 SoNgayLamViec { get => soNgayLamViec; set => soNgayLamViec = value; }
+        public Int64 TienLuongNgay { get => tienLuongNgay; set => tienLuongNgay = value; }
 
         public Int64 luongTong
         {
             get
             {
-                if (soNgayLamViec <= 24) return soNgayLamViec * tienLuongNgay;
-                return (24 + (soNgayLamViec - 24) * 2) * tienLuongNgay;
+                if (SoNgayLamViec <= 24) return SoNgayLamViec * TienLuongNgay;
+                return (24 + (SoNgayLamViec - 24) * 2) * TienLuongNgay;
             }
         }
 
@@ -33,12 +40,12 @@ namespace LeMinhHung_2019601690
 
         public NhanVien(string maNV, string hoTen, string gioiTinh, DateTime namSinh, long soNgayLamViec, long tienLuongNgay)
         {
-            this.maNV = maNV;
-            this.hoTen = hoTen;
-            this.gioiTinh = gioiTinh;
-            this.namSinh = namSinh;
-            this.soNgayLamViec = soNgayLamViec;
-            this.tienLuongNgay = tienLuongNgay;
+            MaNV = maNV;
+            HoTen = hoTen;
+            GioiTinh = gioiTinh;
+            NamSinh = namSinh;
+            SoNgayLamViec = soNgayLamViec;
+            TienLuongNgay = tienLuongNgay;
         }
 
     }

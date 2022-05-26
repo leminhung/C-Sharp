@@ -1,0 +1,48 @@
+﻿<Window x:Class="LeMinhHung_2019601690.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeMinhHung_2019601690"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Center" Height="24" VerticalAlignment="Top" Width="800">
+            <MenuItem Header="Hệ thống">
+                <MenuItem Header="Thoát" Click="btn_close" />
+            </MenuItem>
+            <MenuItem Header="Quản lý nhân viên">
+                <MenuItem Header="Thêm" Click="btn_add" />
+                <MenuItem Header="Hiển thị" Click="btn_display" />
+                <MenuItem Header="Xóa" Click="btn_delete" />
+            </MenuItem>
+        </Menu>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="266,41,0,0" TextWrapping="Wrap" Text="Quản lý nhân viên" VerticalAlignment="Top" Width="215" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="txt_manv" HorizontalAlignment="Left" Height="24" Margin="250,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="110,107,0,0" TextWrapping="Wrap" Text="Mã nhân viên" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txt_hoten" HorizontalAlignment="Left" Height="24" Margin="250,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="110,148,0,0" TextWrapping="Wrap" Text="Họ tên:" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txt_luongngay" HorizontalAlignment="Left" Height="24" Margin="250,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="110,264,0,0" TextWrapping="Wrap" Text="Tiền lương ngày:" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txt_songaylamviec" HorizontalAlignment="Left" Height="24" Margin="250,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="110,308,0,0" TextWrapping="Wrap" Text="Số ngày làm việc:" VerticalAlignment="Top" Width="94"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="110,188,0,0" TextWrapping="Wrap" Text="Giới tính:" VerticalAlignment="Top" Width="94"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="110,221,0,0" TextWrapping="Wrap" Text="Ngày tháng năm sinh" VerticalAlignment="Top" Width="123"/>
+        <RadioButton x:Name="rdnam" Content="Nam" HorizontalAlignment="Left" Height="24" Margin="250,188,0,0" VerticalAlignment="Top" Width="71" IsChecked="true"/>
+        <RadioButton x:Name="rd_nu" Content="Nữ" HorizontalAlignment="Center" Height="24" Margin="0,188,0,0" VerticalAlignment="Top" Width="71"/>
+        <DatePicker x:Name="datepicker" HorizontalAlignment="Left" Height="24" Margin="250,221,0,0" VerticalAlignment="Top" Width="186"/>
+        <ListView x:Name="list_nv" HorizontalAlignment="Center" Height="146" Margin="0,378,0,0" VerticalAlignment="Top" Width="647" MouseDoubleClick="btn_detail_item">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Mã NV" Width="60" DisplayMemberBinding="{Binding maNV}"/>
+                    <GridViewColumn Header="Họ tên" Width="120" DisplayMemberBinding="{Binding hoten}"/>
+                    <GridViewColumn Header="Giới tính" Width="100" DisplayMemberBinding="{Binding gioiTinh}"/>
+                    <GridViewColumn Header="Ngày sinh" Width="80" DisplayMemberBinding="{Binding ngaySinh}"/>
+                    <GridViewColumn Header="Lương ngày" Width="80" DisplayMemberBinding="{Binding luongNgay}"/>
+                    <GridViewColumn Header="Số ngày làm việc" Width="100" DisplayMemberBinding="{Binding soNgayLamViec}"/>
+                    <GridViewColumn Header="Tiền lương" Width="100" DisplayMemberBinding="{Binding tienLuong}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

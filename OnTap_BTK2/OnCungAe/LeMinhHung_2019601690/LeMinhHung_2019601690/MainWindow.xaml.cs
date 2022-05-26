@@ -41,6 +41,8 @@ namespace LeMinhHung_2019601690
 
         private void btn_hienthi(object sender, RoutedEventArgs e)
         {
+            list_nv.Items.Clear();
+
             foreach(var item in nhanviens)
             {
                 list_nv.Items.Add(item);
@@ -74,13 +76,13 @@ namespace LeMinhHung_2019601690
             }
 
             Window2 window2 = new Window2();
-            window2.txt_manv.Text = nv.maNV;
-            window2.txt_hoten.Text = nv.hoTen;
-            window2.txt_songaylamviec.Text = nv.soNgayLamViec.ToString();
-            window2.datepicker.Text = nv.namSinh.ToString();
-            window2.rdnam.IsChecked = nv.gioiTinh.Equals("Nam") ? true : false;
-            window2.rdnu.IsChecked = nv.gioiTinh.Equals("Nam") ? false : true;
-            window2.txt_tienluong.Text = nv.tienLuongNgay.ToString();
+            window2.txt_manv.Text = nv.MaNV;
+            window2.txt_hoten.Text = nv.HoTen;
+            window2.txt_songaylamviec.Text = nv.SoNgayLamViec.ToString();
+            window2.datepicker.Text = nv.NamSinh.ToString();
+            window2.rdnam.IsChecked = nv.GioiTinh.Equals("Nam") ? true : false;
+            window2.rdnu.IsChecked = nv.GioiTinh.Equals("Nam") ? false : true;
+            window2.txt_tienluong.Text = nv.TienLuongNgay.ToString();
             window2.txt_tongluong.Text = nv.luongTong.ToString();
 
             window2.ShowDialog();
