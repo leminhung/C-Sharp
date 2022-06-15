@@ -1,0 +1,51 @@
+﻿<Window x:Class="DeThayHoang.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeThayHoang"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="Template_btn" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="Gray"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="69*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="112,47,0,0" TextWrapping="Wrap" Text="Mã sản phẩm:" VerticalAlignment="Top" Width="90" FontWeight="Bold"/>
+        <TextBox Text="{Binding SelectedItem.MaSp, ElementName=listDSSP, Mode=OneWay}" x:Name="txt_masp" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="31,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Grid.Column="1" FontFamily="Times New Roman"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="112,88,0,0" TextWrapping="Wrap" Text="Tên sản phẩm:" VerticalAlignment="Top" Width="90" FontWeight="Bold"/>
+        <TextBox Text="{Binding SelectedItem.TenSp, ElementName=listDSSP, Mode=OneWay}" x:Name="txt_tensp" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="31,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Grid.Column="1" FontFamily="Times New Roman"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="112,129,0,0" TextWrapping="Wrap" Text="Đơn giá:" VerticalAlignment="Top" Width="90" FontWeight="Bold"/>
+        <TextBox Text="{Binding SelectedItem.DonGia, ElementName=listDSSP, Mode=OneWay}" x:Name="txt_dongia" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="31,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Grid.Column="1" FontFamily="Times New Roman"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="112,171,0,0" TextWrapping="Wrap" Text="Số lượng bán:" VerticalAlignment="Top" Width="90" FontWeight="Bold"/>
+        <TextBox Text="{Binding SelectedItem.SoLuongBan, ElementName=listDSSP, Mode=OneWay}" x:Name="txt_soluongban" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="31,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Grid.Column="1" FontFamily="Times New Roman"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="112,212,0,0" TextWrapping="Wrap" Text="Nhóm hàng:" VerticalAlignment="Top" Width="90" FontWeight="Bold"/>
+        <ComboBox x:Name="cb_nhomhang" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="27" Margin="31,211,0,0" VerticalAlignment="Top" Width="430"/>
+        <DataGrid x:Name="listDSSP" AutoGenerateColumns="False" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="110" Margin="112,262,0,0" VerticalAlignment="Top" Width="574">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã SP" Binding="{Binding MaSp}" Width="80"/>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding TenSp}" Width="100" />
+                <DataGridTextColumn Header="Đơn giá" Binding="{Binding DonGia}" Width="100" />
+                <DataGridTextColumn Header="Số lượng bán" Binding="{Binding SoLuongBan}" Width="100" />
+                <DataGridTextColumn Header="Nhóm hàng" Binding="{Binding TenNhomHang}" Width="100" />
+                <DataGridTextColumn Header="Tiền bán" Binding="{Binding TienBan}" Width="100" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnThem_Click" Template="{StaticResource Template_btn}" Grid.Column="1" Content="Thêm" HorizontalAlignment="Left" Height="24" Margin="85,387,0,0" VerticalAlignment="Top" Width="84" FontWeight="Bold" Click="btnThem_ClickAction"/>
+        <Button x:Name="btnTim_Click" Template="{StaticResource Template_btn}" Grid.Column="1" Content="Tìm" HorizontalAlignment="Left" Height="24" Margin="203,387,0,0" VerticalAlignment="Top" Width="84" Grid.ColumnSpan="2" FontWeight="Bold" Click="btnTim_ClickAction"/>
+    </Grid>
+</Window>
