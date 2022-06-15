@@ -1,0 +1,52 @@
+﻿<Window x:Class="DeOn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeOn"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="Template_btn" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="Gray"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Mã sản phẩm:" HorizontalAlignment="Left" Margin="60,30,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="Tên sản phẩm:" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="Đơn giá:" HorizontalAlignment="Left" Margin="60,90,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="Số lượng bán:" HorizontalAlignment="Left" Margin="60,120,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="Nhóm hàng:" HorizontalAlignment="Left" Margin="60,150,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <TextBox Name="txtMaSP" HorizontalAlignment="Left" Margin="182,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" Foreground="Blue" Height="25"
+                 Text="{Binding SelectedItem.MaSp, ElementName=dgDSSP, Mode=OneWay}"/>
+        <TextBox Name="txtTenSP" HorizontalAlignment="Left" Margin="182,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" Foreground="Blue" Height="25"
+            Text="{Binding SelectedItem.TenSanPham, ElementName=dgDSSP, Mode=OneWay}"/>
+        <TextBox Name="txtDonGia" HorizontalAlignment="Left" Margin="182,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" Foreground="Blue" Height="25"
+            Text="{Binding SelectedItem.DonGia, ElementName=dgDSSP, Mode=OneWay}"/>
+        <TextBox Name="txtSoLuongBan" HorizontalAlignment="Left" Margin="182,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" Foreground="Blue" Height="25"
+            Text="{Binding SelectedItem.SoLuongBan, ElementName=dgDSSP, Mode=OneWay}"/>
+        <ComboBox Name="cbNhomHang" HorizontalAlignment="Left" Margin="182,150,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <DataGrid Name="dgDSSP" AutoGenerateColumns="False" Margin="48,179,138,101" SelectionChanged="dgDSSP_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã SP" Binding="{Binding MaSp}" Width="100"/>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding TenSanPham}" Width="100"/>
+                <DataGridTextColumn Header="Đơn giá" Binding="{Binding DonGia}" Width="100"/>
+                <DataGridTextColumn Header="Số lượng bán" Binding="{Binding SoLuongBan}" Width="100"/>
+                <DataGridTextColumn Header="Nhóm hàng" Binding="{Binding TenNhomHang}" Width="100"/>
+                <DataGridTextColumn Header="Tiền bán" Binding="{Binding Tienban}" Width="100">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Template="{StaticResource Template_btn}" Name="btnThem" Content="Thêm" HorizontalAlignment="Left" Margin="250,350,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnThem_Click"/>
+        <Button Template="{StaticResource Template_btn}" x:Name="btnTim" Content="Tìm" HorizontalAlignment="Left" Margin="400,350,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="btnTim_Click"/>
+    </Grid>
+</Window>

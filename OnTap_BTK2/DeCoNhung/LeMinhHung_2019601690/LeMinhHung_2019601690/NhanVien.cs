@@ -8,10 +8,10 @@ namespace LeMinhHung_2019601690
 {
     public class NhanVien
     {
-        public string hoTen;
-        public string loaiNv;
-        public DateTime ngaysinh;
-        public float soTienBan;
+        private string hoTen;
+        private string loaiNv;
+        private DateTime ngaysinh;
+        private float soTienBan;
 
         public string HoTen { get => hoTen; set => hoTen = value; }
         public string LoaiNv { get => loaiNv; set => loaiNv = value; }

@@ -90,10 +90,10 @@ namespace LeMinhHung_2019601690
             }
 
             Window2 window2 = new Window2();
-            window2.txt_hoten.Text = nv.hoTen;
-            window2.txt_tienbanhang.Text = nv.soTienBan.ToString();
-            window2.datepicker.Text = nv.ngaysinh.ToString();
-            window2.opt_loainv.SelectedItem = nv.loaiNv.ToString();
+            window2.txt_hoten.Text = nv.HoTen;
+            window2.txt_tienbanhang.Text = nv.SoTienBan.ToString();
+            window2.datepicker.Text = nv.Ngaysinh.ToString();
+            window2.opt_loainv.SelectedItem = nv.LoaiNv.ToString();
 
             window2.ShowDialog();
         }
