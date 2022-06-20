@@ -1,0 +1,21 @@
+﻿<Window x:Class="De02.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De02"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="listSP" AutoGenerateColumns="False"  CanUserAddRows="False" HorizontalAlignment="Center" Height="95" VerticalAlignment="Center" Width="618">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding MaSp}" Header="Mã sản phẩm" Width="*"/>
+                <DataGridTextColumn Binding="{Binding TenSanPham}" Header="Tên sản phẩm" Width="*"/>
+                <DataGridTextColumn Binding="{Binding DonGia}" Header="Đơn giá" Width="*"/>
+                <DataGridTextColumn Binding="{Binding SoLuongBan}" Header="Số lượng bán" Width="*"/>
+                <DataGridTextColumn Binding="{Binding MaNhomHang}" Header="Nhóm hàng" Width="*"/>
+                <DataGridTextColumn Binding="{Binding ThanhTien}" Header="Thành tiền" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

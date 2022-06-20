@@ -28,6 +28,7 @@ Insert into BenhNhan(Mabn,Hoten,Diachi,SongayNV,Makhoa) values('01',N'Lê Thị 
 Insert into BenhNhan(Mabn,Hoten,Diachi,SongayNV,Makhoa) values('02',N'Trần Minh Đại',N'Hải Phòng',18,'A01')
 Insert into BenhNhan(Mabn,Hoten,Diachi,SongayNV,Makhoa) values('03',N'Đỗ Thị Vân',N'Thái Bình',28,'A02')
 Insert into BenhNhan(Mabn,Hoten,Diachi,SongayNV,Makhoa) values('04',N'Ngô Văn Hà',N'Vĩnh Phúc',16,'A02')
+Insert into BenhNhan(Mabn,Hoten,Diachi,SongayNV,Makhoa) values('04',N'Ngô Văn Hà',N'Vĩnh Phúc',16,'A02')
 
 
 SELECT * from KhoaKham

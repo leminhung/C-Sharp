@@ -1,0 +1,126 @@
+ConnectDB:
+	Scaffold-DbContext "" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Màu textbox:
+	FontFamily="Times New Roman" Foreground="Blue"
+
+Button:
+	 Template="{StaticResource Template_btn}"
+
+Header:
+     <Window.Resources>
+        <ControlTemplate x:Key="Template_btn" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="YellowGreen"></Ellipse>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+
+TextBox:
+        <TextBox Text="{Binding SelectedItem.MaBn, ElementName=listBN, Mode=OneWay}"/>
+
+
+LoadItems khi khởi tạo:
+	private void LoadItems()
+        {
+            var query = from bn in ql.BenhNhans
+                        orderby bn.SoNgayNamVien descending
+                        select bn;
+
+            listBN.ItemsSource = query.ToList();
+        }
+
+        private void LoadCombobox()
+        {
+            var query = from kh in ql.Khoas
+                        select kh.TenKhoa;
+            cbKhoaKham.ItemsSource = query.ToList();
+            cbKhoaKham.SelectedIndex = 0;
+        }
+
+
+
+Hàm Clear:
+	private void Clear()
+        {
+            txtHoTen.Clear();
+            txtMaBN.Clear();
+            txtSoNgayNamVien.Clear();
+            cbKhoaKham.SelectedIndex = 0;
+        }
+
+
+Hàm Selection Change:
+	private void Handle_Selection_Change(object sender, SelectionChangedEventArgs e)
+        {
+            var benhnhan = listBN.SelectedItem;
+            if (benhnhan != null)
+            {
+                var maKhoa = (listBN.SelectedCells[2].Column.GetCellContent(benhnhan) as TextBlock).Text;
+
+                var tenKhoa = (from kh in ql.Khoas
+                             where kh.MaKhoa.ToString() == maKhoa
+                             select kh.TenKhoa).Single();
+
+                cbKhoaKham.SelectedItem = tenKhoa.ToString();
+            }
+        }
+
+
+Hàm Thêm:
+	private bool check()
+        {
+            if (string.IsNullOrEmpty(txtHoTen.Text) || string.IsNullOrEmpty(txtSoNgayNamVien.Text) || string.IsNullOrEmpty(txtMaBN.Text))
+                return false;
+            return true;
+        }
+
+
+        private void btnThem_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (!check())
+                    throw new Exception("Khong duoc bo trong truong du lieu");
+                if(!Regex.IsMatch(txtMaBN.Text, @"\d+"))
+                    throw new Exception("Ma benh nhan khong dung kieu du lieu");
+                if (!Regex.IsMatch(txtSoNgayNamVien.Text, @"\d+"))
+                    throw new Exception("So ngay nam vien khong dung kieu du lieu");
+                if (int.Parse(txtSoNgayNamVien.Text) < 1)
+                    throw new Exception("So ngay nam vien phai >= 1");
+
+                var bnhan = (from bn in ql.BenhNhans
+                             where bn.MaBn == Int32.Parse(txtMaBN.Text)
+                             select bn).SingleOrDefault();
+
+                if(bnhan != null)
+                    throw new Exception("Ma benh nhan da ton tai");
+
+                var maKhoa = (from kh in ql.Khoas
+                              where kh.TenKhoa == cbKhoaKham.Text
+                              select kh.MaKhoa).SingleOrDefault();
+
+                BenhNhan benhnhan = new BenhNhan();
+                benhnhan.MaBn = Int32.Parse(txtMaBN.Text);
+                benhnhan.MaKhoa = Convert.ToInt32(maKhoa);
+                benhnhan.HoTen = txtHoTen.Text;
+                benhnhan.SoNgayNamVien = Int32.Parse(txtSoNgayNamVien.Text);
+                benhnhan.VienPhi = Int32.Parse(txtSoNgayNamVien.Text) * 200000;
+
+                ql.BenhNhans.Add(benhnhan);
+                ql.SaveChanges();
+
+                LoadItems();
+                Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
+        }

@@ -1,0 +1,42 @@
+﻿<Window x:Class="De02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De02"
+        mc:Ignorable="d"
+        Title="Quản lý bệnh nhân" Height="500" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="Template_btn" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="YellowGreen"></Ellipse>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Mã bệnh nhận:" HorizontalAlignment="Left" Height="31" Margin="87,42,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBox Text="{Binding SelectedItem.MaBn, ElementName=listBN, Mode=OneWay}" x:Name="txtMaBN" HorizontalAlignment="Left" Height="31" Margin="236,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367" FontFamily="Times New Roman" Foreground="Blue"/>
+        <Label Content="Họ tên:" HorizontalAlignment="Left" Height="31" Margin="87,96,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBox  FontFamily="Times New Roman" Foreground="Blue" Text="{Binding SelectedItem.HoTen, ElementName=listBN, Mode=OneWay}"  x:Name="txtHoTen" HorizontalAlignment="Left" Height="31" Margin="236,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367"/>
+        <Label Content="Số ngày nằm viện:" HorizontalAlignment="Left" Height="31" Margin="87,148,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBox  FontFamily="Times New Roman" Foreground="Blue" Text="{Binding SelectedItem.SoNgayNamVien, ElementName=listBN, Mode=OneWay}"  x:Name="txtSoNgayNamVien" HorizontalAlignment="Left" Height="31" Margin="236,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367"/>
+        <Label Content="Khoa khám:" HorizontalAlignment="Left" Height="31" Margin="87,204,0,0" VerticalAlignment="Top" Width="97"/>
+        <ComboBox x:Name="cbKhoaKham" HorizontalAlignment="Left" Height="31" Margin="236,204,0,0" VerticalAlignment="Top" Width="367"/>
+        <DataGrid SelectionChanged="Handle_Selection_Change" x:Name="listBN" IsReadOnly="true" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Left" Height="102" Margin="87,270,0,0" VerticalAlignment="Top" Width="632">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding MaBn}" Header="Mã bệnh nhân" Width="*" />
+                <DataGridTextColumn Binding="{Binding HoTen}" Header="Họ tên" Width="*" />
+                <DataGridTextColumn Binding="{Binding MaKhoa}" Header="Mã khoa" Width="*" />
+                <DataGridTextColumn Binding="{Binding SoNgayNamVien}" Header="Số ngày nằm viện" Width="*" />
+                <DataGridTextColumn Binding="{Binding VienPhi}" Header="Viện phí" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Template="{StaticResource Template_btn}" Content="Thêm" HorizontalAlignment="Left" Height="27" Margin="284,400,0,0" VerticalAlignment="Top" Width="84" Click="btnThem_Click"/>
+        <Button Template="{StaticResource Template_btn}" Content="Tìm" HorizontalAlignment="Left" Height="27" Margin="409,400,0,0" VerticalAlignment="Top" Width="84" Click="btnTim_Click"/>
+       </Grid>
+</Window>
