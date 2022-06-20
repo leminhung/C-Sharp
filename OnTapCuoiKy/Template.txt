@@ -21,8 +21,10 @@ Header:
         </Style>
     </Window.Resources>
 
+
 TextBox:
         <TextBox Text="{Binding SelectedItem.MaBn, ElementName=listBN, Mode=OneWay}"/>
+
 
 
 LoadItems khi khởi tạo:
@@ -86,41 +88,112 @@ Hàm Thêm:
             try
             {
                 if (!check())
-                    throw new Exception("Khong duoc bo trong truong du lieu");
-                if(!Regex.IsMatch(txtMaBN.Text, @"\d+"))
-                    throw new Exception("Ma benh nhan khong dung kieu du lieu");
-                if (!Regex.IsMatch(txtSoNgayNamVien.Text, @"\d+"))
-                    throw new Exception("So ngay nam vien khong dung kieu du lieu");
-                if (int.Parse(txtSoNgayNamVien.Text) < 1)
-                    throw new Exception("So ngay nam vien phai >= 1");
+                    throw new Exception("Khong duoc bo trong du lieu");
 
-                var bnhan = (from bn in ql.BenhNhans
-                             where bn.MaBn == Int32.Parse(txtMaBN.Text)
-                             select bn).SingleOrDefault();
+                int maSP, DonGia, SLB;
+                bool check1 = Int32.TryParse(txtMaSp.Text, out maSP);
+                bool check2 = Int32.TryParse(txtDonGia.Text, out DonGia);
+                bool check3 = Int32.TryParse(txtSoLuongBan.Text, out SLB);
 
-                if(bnhan != null)
-                    throw new Exception("Ma benh nhan da ton tai");
+                if(!check1)
+                    throw new Exception("Ma SP khong dung kieu du lieu");
+                if (!check2)
+                    throw new Exception("Don Gia SP khong dung kieu du lieu");
+                if (!check3)
+                    throw new Exception("So Luong ban SP khong dung kieu du lieu");
 
-                var maKhoa = (from kh in ql.Khoas
-                              where kh.TenKhoa == cbKhoaKham.Text
-                              select kh.MaKhoa).SingleOrDefault();
+                if (int.Parse(txtSoLuongBan.Text) < 1)
+                    throw new Exception("So luong ban phai >= 1");
 
-                BenhNhan benhnhan = new BenhNhan();
-                benhnhan.MaBn = Int32.Parse(txtMaBN.Text);
-                benhnhan.MaKhoa = Convert.ToInt32(maKhoa);
-                benhnhan.HoTen = txtHoTen.Text;
-                benhnhan.SoNgayNamVien = Int32.Parse(txtSoNgayNamVien.Text);
-                benhnhan.VienPhi = Int32.Parse(txtSoNgayNamVien.Text) * 200000;
+                var spham = (from sp in ql.SanPhams
+                             where sp.MaSp == int.Parse(txtMaSp.Text)
+                             select sp).SingleOrDefault();
+                if (spham != null)
+                    throw new Exception("Ma san pham khong duoc trung");
 
-                ql.BenhNhans.Add(benhnhan);
+                var maNH = (from nh in ql.NhomHangs
+                            where nh.TenNhomHang == cbNhomHang.Text
+                            select nh.MaNhomHang).SingleOrDefault();
+
+                SanPham s = new SanPham();
+                s.MaSp = maSP;
+                s.TenSanPham = txtTenSP.Text;
+                s.DonGia = DonGia;
+                s.SoLuongBan = SLB;
+                s.MaNhomHang = Convert.ToInt32(maNH);
+                s.TienBan = int.Parse(txtDonGia.Text) * int.Parse(txtSoLuongBan.Text);
+
+                ql.SanPhams.Add(s);
                 ql.SaveChanges();
+                LoadItem();
 
-                LoadItems();
                 Clear();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Loi");
             }
-           
+        }
+
+
+Hàm sửa:
+
+	private void btnSua_Click(object sender, RoutedEventArgs e)
+        {
+            var spham = (from sp in ql.SanPhams
+                         where sp.MaSp == int.Parse(txtMaSP.Text)
+                         select sp).SingleOrDefault();
+
+
+            var maNH = (from nh in ql.NhomHangs
+                        where nh.TenNhomHang == cbNhomHang.Text
+                        select nh.MaNhomHang).SingleOrDefault();
+
+
+            spham.TenSanPham = txtTenSP.Text;
+            spham.DonGia = int.Parse(txtDonGia.Text);
+            spham.SoLuongBan = int.Parse(txtSoLuongBan.Text);
+            spham.MaNhomHang = Convert.ToInt32(maNH);
+
+            ql.SaveChanges();
+            LoadItem();
+
+            Clear();
+        }
+
+
+Hàm xóa:
+
+ 	private void btnXoa_Click(object sender, RoutedEventArgs e)
+        {
+
+            var item = listSP.SelectedItem;
+            try
+            {
+                if (item == null)
+                    throw new Exception("Ban chua chon san pham nao de xoa");
+
+                MessageBoxButton buttons = MessageBoxButton.YesNo;
+                MessageBoxResult result = MessageBox.Show("Ban co muon xoa san pham hay k?", "Xac nhan", buttons);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    var spham = (from sp in ql.SanPhams
+                                 where sp.MaSp == int.Parse(txtMaSP.Text)
+                                 select sp).SingleOrDefault();
+
+                    ql.SanPhams.Remove(spham);
+                    ql.SaveChanges();
+
+                    LoadItem();
+                    Clear();
+                }
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Loi");
+            }
+
         }

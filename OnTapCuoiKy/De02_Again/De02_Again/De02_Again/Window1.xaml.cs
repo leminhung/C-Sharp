@@ -33,8 +33,7 @@ namespace De02_Again
                             sp.DonGia,
                             sp.SoLuongBan,
                             sp.MaNhomHang,
-                            //TienBan = string.Format("{}")
-                            TienBan = sp.SoLuongBan * sp.DonGia
+                            TienBan = string.Format("{0:N0}", sp.SoLuongBan * sp.DonGia)
                         };
             listSP.ItemsSource = query.ToList();
         }

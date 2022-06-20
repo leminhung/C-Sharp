@@ -48,8 +48,7 @@ namespace De02_Again
                             sp.DonGia,
                             sp.SoLuongBan,
                             sp.MaNhomHang,
-                            //TienBan = string.Format("{}")
-                            TienBan = sp.SoLuongBan * sp.DonGia
+                            TienBan = string.Format("{0:N0}", sp.SoLuongBan * sp.DonGia)
                         };
             listSP.ItemsSource = query.ToList();
         }
@@ -75,9 +74,20 @@ namespace De02_Again
             {
                 if (!check())
                     throw new Exception("Khong duoc bo trong du lieu");
-                if(!Regex.IsMatch(txtSoLuongBan.Text, @"\d+") || !Regex.IsMatch(txtMaSp.Text, @"\d+"))
-                    throw new Exception("So luong ban hoac ma san pham phai nguyen");
-                if(int.Parse(txtSoLuongBan.Text) < 1)
+
+                int maSP, DonGia, SLB;
+                bool check1 = Int32.TryParse(txtMaSp.Text, out maSP);
+                bool check2 = Int32.TryParse(txtDonGia.Text, out DonGia);
+                bool check3 = Int32.TryParse(txtSoLuongBan.Text, out SLB);
+
+                if(!check1)
+                    throw new Exception("Ma SP khong dung kieu du lieu");
+                if (!check2)
+                    throw new Exception("Don Gia SP khong dung kieu du lieu");
+                if (!check3)
+                    throw new Exception("So Luong ban SP khong dung kieu du lieu");
+
+                if (int.Parse(txtSoLuongBan.Text) < 1)
                     throw new Exception("So luong ban phai >= 1");
 
                 var spham = (from sp in ql.SanPhams
@@ -91,10 +101,10 @@ namespace De02_Again
                             select nh.MaNhomHang).SingleOrDefault();
 
                 SanPham s = new SanPham();
-                s.MaSp = int.Parse(txtMaSp.Text);
+                s.MaSp = maSP;
                 s.TenSanPham = txtTenSP.Text;
-                s.DonGia = int.Parse(txtDonGia.Text);
-                s.SoLuongBan = int.Parse(txtSoLuongBan.Text);
+                s.DonGia = DonGia;
+                s.SoLuongBan = SLB;
                 s.MaNhomHang = Convert.ToInt32(maNH);
                 s.TienBan = int.Parse(txtDonGia.Text) * int.Parse(txtSoLuongBan.Text);
 
