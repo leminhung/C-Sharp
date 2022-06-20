@@ -1,0 +1,47 @@
+﻿<Window x:Class="De16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De16"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="Template_btn" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="YellowGreen"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Mã sản phẩm:" HorizontalAlignment="Left" Height="31" Margin="74,31,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txtMaSP" FontFamily="Times New Roman" Foreground="Blue" Text="{Binding SelectedItem.MaSp, ElementName=listSP, Mode=OneWay}" HorizontalAlignment="Left" Height="31" Margin="212,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="397"/>
+        <Label Content="Tên sản phẩm:" HorizontalAlignment="Left" Height="32" Margin="74,86,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txtTenSP" FontFamily="Times New Roman" Foreground="Blue" Text="{Binding SelectedItem.TenSanPham, ElementName=listSP, Mode=OneWay}" HorizontalAlignment="Left" Height="32" Margin="212,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="397"/>
+        <Label Content="Đơn giá:" HorizontalAlignment="Left" Height="32" Margin="74,138,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txtDonGia" FontFamily="Times New Roman" Foreground="Blue" Text="{Binding SelectedItem.DonGia, ElementName=listSP, Mode=OneWay}" HorizontalAlignment="Left" Height="32" Margin="212,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="397"/>
+        <Label Content="Số lượng bán:" HorizontalAlignment="Left" Height="32" Margin="74,191,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="txtSoLuongBan" FontFamily="Times New Roman" Foreground="Blue" Text="{Binding SelectedItem.SoLuongBan, ElementName=listSP, Mode=OneWay}" HorizontalAlignment="Left" Height="32" Margin="212,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="397"/>
+        <Label Content="Nhóm hàng:" HorizontalAlignment="Left" Height="32" Margin="72,250,0,0" VerticalAlignment="Top" Width="94"/>
+        <ComboBox x:Name="cbNhomHang" HorizontalAlignment="Left" Height="32" Margin="212,250,0,0" VerticalAlignment="Top" Width="397"/>
+        <DataGrid SelectionChanged="Handle_Change" AutoGenerateColumns="False" CanUserAddRows="False" x:Name="listSP" HorizontalAlignment="Left" Height="121" Margin="74,318,0,0" VerticalAlignment="Top" Width="655">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã SP" Binding="{Binding MaSp}" Width="*"/>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding TenSanPham}" Width="*"/>
+                <DataGridTextColumn Header="Đơn giá" Binding="{Binding DonGia}" Width="*"/>
+                <DataGridTextColumn Header="Số lượng bán" Binding="{Binding SoLuongBan}" Width="*"/>
+                <DataGridTextColumn Header="Nhóm hàng" Binding="{Binding MaNhomHang}" Width="*"/>
+                <DataGridTextColumn Header="Tiền bán" Binding="{Binding TienBan}" Width="*"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Template="{StaticResource Template_btn}" Content="Thêm" HorizontalAlignment="Left" Height="29" Margin="212,458,0,0" VerticalAlignment="Top" Width="74" Click="btnThem_Click"/>
+        <Button x:Name="btnSuaClick" Template="{StaticResource Template_btn}" Content="Sửa" HorizontalAlignment="Left" Height="29" Margin="326,458,0,0" VerticalAlignment="Top" Width="74" Click="btnSua_Click"/>
+        <Button Template="{StaticResource Template_btn}" Content="Xóa" HorizontalAlignment="Left" Height="29" Margin="444,458,0,0" VerticalAlignment="Top" Width="74" Click="btnXoa_Click"/>
+    </Grid>
+</Window>
